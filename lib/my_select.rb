@@ -1,4 +1,4 @@
-def my_select(collection)
+def my_select(collection, &block)
  # your code here!
  new_coll = []
  i = 0
