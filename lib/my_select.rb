@@ -5,7 +5,7 @@ def my_select(collection, &block)
  while i < collection.length
   new_i = yield collection[i]
   
-  new_coll << new_i if yield collection[i]
+  new_coll << yield collection[i] if new_i
   
   i = i + 1
   end
